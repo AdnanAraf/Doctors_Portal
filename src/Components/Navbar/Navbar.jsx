@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
           <div className="bg-gray-400 w-full h-[100px] flex justify-between">
             <div className="m-[30px]">
-              <h1 className="text-[40px]">Doctors Portal</h1>
+              <h1 className="text-[40px] ml-[85px]">Doctors Portal</h1>
             </div>
 
             <div className="m-[30px] mx-[300px]">
