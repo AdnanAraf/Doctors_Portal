@@ -26,7 +26,7 @@ const Navbar = () => {
               </Link>
               <Link
                 className="p-[20px] hover:text-white text-black text-[18px] font-mono"
-                to="/service"
+                to="/appiontment"
               >
                 Appointment
               </Link>

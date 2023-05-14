@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Home1 from "../Home1/Home1";
 import Template from "../Template/Template";
+import Appointment from "../Appointment/Appointment";
 
 const Routes = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Template />,
+      },
+      {
+        path: "appiontment",
+        element: <Appointment />,
       },
     ],
   },
