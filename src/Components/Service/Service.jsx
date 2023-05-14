@@ -5,7 +5,9 @@ const Service = () => {
     <div>
       <div className="mt-[100px]">
         <h1 className="text-[#19D3AE] font-bold text-center">OUR SERVICES</h1>
-        <h2 className="text-center text-[30px]">Services We Provide</h2>
+        <h2 className="text-center text-[30px] font-semibold">
+          Services We Provide
+        </h2>
       </div>
       <div className="grid grid-cols-3  gap-10 m-[50px] mx-[200px]">
         <div className="h-[300px] w-[300px] shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-lg">
