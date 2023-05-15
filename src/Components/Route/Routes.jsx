@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Home1 from "../Home1/Home1";
 import Template from "../Template/Template";
 import Appointment from "../Appointment/Appointment";
+import Addform from "../Addform/Addform";
 
 const Routes = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const Routes = createBrowserRouter([
       {
         path: "appiontment",
         element: <Appointment />,
+      },
+      {
+        path: "addform/:id",
+        element: <Addform />,
+        loader: ({}) => fetch(`/Fakedata.json`),
       },
     ],
   },
