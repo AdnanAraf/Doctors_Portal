@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ item }) => {
   console.log(item);
-  const { id, title, time, space } = item;
+  const { _id, title, time, space } = item;
 
   // function HandleClick(id) {
   //   console.log(id);
@@ -15,7 +15,7 @@ const ServiceCard = ({ item }) => {
         <h1 className="text-center font-bold text-[20px]">{title}</h1>
         <p className="text-center  ">{time}</p>
         <p className="text-center  ">{space}</p>
-        <Link to={`/addform/${id}`}>
+        <Link to={`/addform/${_id}`}>
           <button className="btn btn-accent mt-[20px] ml-[80px] cursor-pointer">
             Booking Now
           </button>

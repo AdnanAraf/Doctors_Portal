@@ -22,7 +22,8 @@ const Routes = createBrowserRouter([
       {
         path: "addform/:id",
         element: <Addform />,
-        loader: ({}) => fetch(`/Fakedata.json`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/DoctorsCollection/${params.id}`),
       },
     ],
   },

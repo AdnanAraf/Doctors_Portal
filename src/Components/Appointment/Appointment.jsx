@@ -4,7 +4,7 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 const Appointment = () => {
   const [card, setcard] = useState([]);
   useEffect(() => {
-    fetch("Fakedata.json")
+    fetch("http://localhost:5000/DoctorsCollection")
       .then((res) => res.json())
       .then((data) => setcard(data));
   }, []);

@@ -2,11 +2,14 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 
 const Addform = () => {
-  const data = useLoaderData();
-  console.log(data);
+  const AddFormdata = useLoaderData();
+  console.log(AddFormdata);
+
   return (
     <div>
-      <h1>{data.title}</h1>
+      <div>
+        <h1>{AddFormdata.title}</h1>
+      </div>
     </div>
   );
 };
